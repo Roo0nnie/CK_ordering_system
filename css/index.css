@@ -1,0 +1,195 @@
+:root {
+    --main-color-red:rgb(204, 18, 18);
+    --main-color-white:rgb(255, 255, 255);
+    --main-color-black:rgb(0, 0, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+   
+    }
+header {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--main-color-red);
+    height: 12%;
+    width: 100%;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    color: var(--main-color-white);
+}
+.logo img {
+    height:70px;
+    width: 70px;
+    margin-left: 2rem;
+}
+.search {
+    position: relative;
+}
+.search input {
+    padding: 5px 5px 5px 30px;
+    outline: none;
+    border-radius: 5px;
+}
+.search_input {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    color: var(--main-color-black);
+
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation_list {
+    display: flex;
+}
+.navigation_list li {
+    list-style: none;
+    margin-inline: 2rem;
+    border: 3px solid transparent;
+    transition: .3s ease-in-out;
+}
+.navigation_list li:hover {
+    border-bottom: 3px rgb(255, 255, 255) solid;
+}
+
+/* Landing Page */
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5em;
+    height: 100vh;
+    background: url(/asset/background.png);
+    background-size: cover;
+    /* background: radial-gradient(circle, rgba(249,5,5,1) 0%, rgba(145,15,20,1) 100%); */
+    }
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card_box {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  background: var(--main-color-red);
+  box-shadow: 0 25px 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all .3s;
+  position: relative;
+}
+
+.card_box:hover {
+  transform: scale(.9);
+}
+
+.card_box span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box span::before {
+  content: 'Best Seller';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+.card_box span::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+.card_box img {
+    position: absolute;
+    overflow: hidden;
+    height: 300px;
+    top: 4rem;
+    left: .3rem;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    position: relative;
+    
+}
+.left-side h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--main-color-white);
+    -webkit-text-stroke: 3px rgb(251, 255, 0);
+}
+.left-side span:before {
+    content: 'Busog, Sarap at Budget!';
+    position: absolute;
+    width: 60%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ffdd47 0%, #ffb144  51%, #f4ff53  100%);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+    top: 21rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color-black);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+   
+}
+.left-side button {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-block: .2rem;
+    width: 250px;
+    border-radius: 40px;
+    outline: none;
+    background: #570b0e;
+    color: var(--main-color-white);
+    border: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+    transition: .5s ease-in-out;
+}
+.left-side button:hover {
+    transform: scale(.9);
+    
+}
