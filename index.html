@@ -11,7 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;600&family=Satisfy&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
+
+<!-- star -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <!-- search icon -->
     <link
       rel="stylesheet"
@@ -22,49 +31,1516 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    
+    <!--  -->
+    
     <title>HOME</title>
+    
   </head>
   <body>
-    <header>
-      <div class="nav">
-        <div class="icon search">
-          <span class="material-symbols-outlined search_input">search</span>
-          <input type="text" />
-        </div>
-        <div class="center">
-          <ul class="navigation_list">
-            <li>Home</li>
-            <li>Menu</li>
-            <li>About</li>
-          </ul>
-          <div class="logo"><img src="/asset/logo.png" alt="mylogo" /></div>
-          <ul class="navigation_list">
-            <li>Reviews</li>
-            <li>Contact</li>
-            <li>Blog</li>
-          </ul>
-        </div>
-        <div class="icon market">
-          <span class="material-symbols-outlined cart_input"
-            >shopping_cart</span
-          >
+<!-- Sidebar Cart -->
+<div id="mySidebar" class="sidebar">
+  <div class="sidebar-content">
+    <!-- Your sidebar content here -->
+    <div class="titleBox d-flex justify-content-between">
+      <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+      <div class="justify-content-center">
+        <div class="titlecartTop" style="margin-top: 1px;" >Shopping Cart(2)</div>
+        <div class="d-flex justify-content-between">
+          <div class="delete d-flex">
+            <ion-icon name="location-outline"></ion-icon>
+            <div class="sidebar_detail" style="margin-left: 5px;">Location</div>
+          </div>
+          <div class="sidebar_product"><ion-icon name="chevron-forward-outline" data-bs-toggle="modal" data-bs-target="#exampleLocation"></ion-icon></div>
         </div>
       </div>
-    </header>
-    <section class="landing_page">
-      <div class="grid-box">
-        <div class="left-side">
-            <h1>Crispy King</h1>
-            <span></span>
-            <button>Order Now!</button>
+      <div class="sidebar_product">Edit</div>
+    </div>
+  
+    <div class="addtocart">
+      <div class="addtocart-grid">
+        <div class="img">
+          <img src="/asset/leg.png" alt="" srcset="">
         </div>
-        <div class="right-side">
-          <div class="card_box">
-            <img src="" alt="" srcset="">
-            <span></span>
+        <div class="details">
+          <div class="sidebar_product">Chicken Leg</div>
+          <div class="sidebar_detail">added gravy</div>
+          <div class="sidebar_quantity d-flex">
+            <div class="input-group">
+                <button class="minusAdd" type="button"><ion-icon name="remove-outline"></ion-icon></button>
+              <input type="text" class="form-control" placeholder="1">
+              <span class="input-group-btn"></span>
+              <button class="minusAdd" type="button"><ion-icon name="add-outline"></ion-icon></button>         
+            </div>
+          </div>
+          <div class="sidebar_price">₱40.00</div>
+        </div>
+        <div class="delete">
+        <ion-icon name="trash-outline"></ion-icon>
+        </div>
+      </div>
+      </div>
+      <!-- <div class="addtocart">
+        <div class="addtocart-grid">
+          <div class="img">
+            <img src="/asset/leg.png" alt="" srcset="">
+          </div>
+          <div class="details">
+            <div class="sidebar_product">Chicken Leg</div>
+            <div class="sidebar_detail">added gravy</div>
+            <div class="input-group">
+              <button class="minusAdd" type="button"><ion-icon name="remove-outline"></ion-icon></button>
+            <input type="text" class="form-control" placeholder="1">
+            <span class="input-group-btn"></span>
+            <button class="minusAdd" type="button"><ion-icon name="add-outline"></ion-icon></button>         
+          </div>
+            <div class="sidebar_price"> ₱40.00</div>
+          </div>
+          <div class="delete">
+          <ion-icon name="trash-outline"></ion-icon>
+          </div>
+        </div>
+        </div> -->
+  </div>
+  <div class="checkout">
+    <div class="checkoutBox">
+      <div class="checkout_price">₱40.00</div>
+      <button type="buttone" class="  btn-yellow"
+      
+      
+      data-bs-target="#exampleModalDinePickup" data-bs-toggle="modal" onclick="closeNav()">Check out</button>
+    </div>
+  </div>
+</div>
+
+<!-- Double Modal For Checkout Cart -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content bg-yellow">
+      <div class="modal-header">
+    
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><ion-icon name="chevron-back-outline" class="px-2 cursorpointer" data-bs-target="#exampleModalDinePickup" data-bs-toggle="modal"></ion-icon> Order details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       
+      </div>
+      <div class="modal-body bg-yellow">
+        <div class="row">          
+        </div>
+        <div class="row mx-1">
+                
+          <div class="addtocart bg-yellow-container">
+            <div class="addtocart-gridPlaceOrder">
+              <div class="img">
+                <img src="/asset/leg.png" alt="" srcset="">
+              </div>
+              <div class="details">
+                <div class="sidebar_product">Chicken Leg</div>
+                <div class="sidebar_detail">added gravy</div>
+                <div class="sidebar_price">₱40.00</div>
+              </div>
+              <div class="input-group">
+                <button class="minusAdd" type="button"><ion-icon name="remove-outline"></ion-icon></button>
+              <input type="text" class="form-control" placeholder="1">
+              <span class="input-group-btn"></span>
+              <button class="minusAdd" type="button"><ion-icon name="add-outline"></ion-icon></button>         
+            </div>
+            </div>
+            </div>
+            <div class="addNote bg-yellow-container mt-2">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingCoupons" placeholder="Shipping coupons">
+                <label for="floatingCoupons">Shipping coupons</label>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <div class="sidebar_product">Standard shipping</div>
+                <ion-icon name="bicycle-outline"></ion-icon>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="delete d-flex">
+                  <ion-icon name="cube-outline"></ion-icon>
+                  <div class="sidebar_detail" style="margin-left: 5px;">From location</div>
+                </div>
+                <div class="sidebar_product text-decoration-line-through">₱55.00</div>
+              </div>
+              <div class="delete d-flex">
+                <ion-icon name="time-outline"></ion-icon>
+                <div class="sidebar_detail" style="margin-left: 5px;">Estimated delivery: 20mins - 30mins</div>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <div class="sidebar_product">Total</div>
+                <div class="sidebar_product">₱40.00</div>
+              </div>
+            </div>
+          <div class="mb-2 mt-2 bg-yellow-container">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="sidebar_product">Order Summary</div>
+              <div class="sidebar_product"><ion-icon name="book-outline"></ion-icon></div>
+            </div>
+           
+              <div class="delete d-flex justify-content-between">
+                <div class="sidebar_detail">Subtotal</div>
+                <div class="sidebar_detail">₱40.00</div>
+              </div>
+        
+            <div class="delete d-flex justify-content-between">
+              <div class="sidebar_detail">Shipping fee</div>
+              <div class="sidebar_detail">₱20.00</div>
+            </div>
+            <div class="delete d-flex justify-content-between">
+              <div class="sidebar_detail">Shipping discount</div>
+              <div class="sidebar_detail text-decoration-line-through">₱55.00</div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="sidebar_product">Total</div>
+              <div class="sidebar_product">₱60.00</div>
+            </div>
+          </div>
+            <div class=" mb-2 bg-yellow-container">
+              <div class="d-flex justify-content-between mt-3 mb-2">
+                <div class="sidebar_product">Payment methods</div>
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="delete d-flex">
+                  <ion-icon name="pricetag-outline"></ion-icon>
+                  <div class="sidebar_detail" style="margin-left: 5px;">Cash On Delivery</div>
+                </div>
+                <div class="sidebar_product"><input type="radio" class="form-check-input" name="transactionmethod"></div>
+              </div>
+              <div class="d-flex justify-content-between mt-1">
+                <div class="delete d-flex">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                  <div class="sidebar_detail" style="margin-left: 5px;">Add Debit/Credit Card</div>
+                </div>
+                <div class="sidebar_product"><ion-icon name="chevron-forward-outline" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"></ion-icon></div>
+              </div>
+              <div class="d-flex justify-content-between mt-1">
+                <div class="delete d-flex">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <div class="sidebar_detail" style="margin-left: 5px;">GCash</div>
+                </div>
+                <div class="sidebar_product"><input type="radio" class="form-check-input" name="transactionmethod"></div>
+              </div>
+            </div>
+           
+         
+        </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <div class="checkoutBox">
+            <div class="checkout_price text-color-red">Total </div>
+            <div class="checkout_price text-color-red px-2">₱60.00</div>
+          </div>
+          <div>
+            <button type="button" class="btn-red" data-bs-toggle="modal" data-bs-target="#exampleModalCancelOrder">Place Order</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Dine in & Pick up-->
+<div class="modal fade" id="exampleModalDinePickup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-yellow">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"> <ion-icon name="chevron-back-outline" class="px-3 cursorpointer" onclick="openNav()" data-bs-dismiss="modal" aria-label="Close"></ion-icon>Transaction methods</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="addNote bg-yellow-container mt-2">
+          <div class="d-flex justify-content-between mb-2">
+            <div class="sidebar_product">Preferred methods</div>
+            <div class="sidebar_product">Fee</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="delete d-flex">
+              <input type="radio" class="form-check-input" name="transaction" onclick="timepickupClose()">
+              <div class="sidebar_detail" style="margin-left: 5px;">Delivery</div>
+            </div>
+            <div class="sidebar_product">₱20.00</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="delete d-flex">
+              <input type="radio" class="form-check-input" name="transaction" onclick="timepickupOpen()">
+              <div class="sidebar_detail" style="margin-left: 5px;">Pick up</div>
+            </div>
+            <div class="sidebar_product">Free</div>
+          </div>
+        </div>
+        <div class="addNote bg-yellow-container mt-2 deliveryTimeDisplay"      id="deliveryTimeID">
+          <div class="d-flex justify-content-between mb-2">
+            <div class="sidebar_product">Pick-up Time</div>
+            <div class="sidebar_product">Fee</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-center sidebar_product">AM</p>
+              <div class="d-flex justify-content-between">
+                <div class="delete d-flex">
+                  <input type="radio" class="form-check-input" name="transactionmethod">
+                  <div class="sidebar_detail" style="margin-left: 5px;">8:00 - 9:00</div>
+                </div>
+                <div class="sidebar_product"></div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="delete d-flex">
+                  <input type="radio" class="form-check-input" name="transactionmethod" >
+                  <div class="sidebar_detail" style="margin-left: 5px;">10:00 - 11:00</div>
+                </div>
+                <div class="sidebar_product"></div>
+              </div>
+            </div>
+            <div class="col">
+              <p class="text-center sidebar_product">PM</p>
+              <div class="d-flex justify-content-between">
+                <div class="delete d-flex">
+                  <input type="radio" class="form-check-input" name="transactionmethod">
+                  <div class="sidebar_detail" style="margin-left: 5px;">1:00 - 2:00</div>
+                </div>
+                <div class="sidebar_product"></div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="delete d-flex">
+                  <input type="radio" class="form-check-input" name="transactionmethod" >
+                  <div class="sidebar_detail" style="margin-left: 5px;">2:00-3:00</div>
+                </div>
+                <div class="sidebar_product"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-red" data-bs-dismiss="modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Done</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Cancel Order -->
+<div class="modal fade" id="exampleModalCancelOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-yellow">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"> <ion-icon name="chevron-back-outline" class="px-3 cursorpointer"  data-bs-dismiss="modal" aria-label="Close" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"></ion-icon>Cancel methods</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="addNote bg-yellow-container mt-2">
+          <div class="d-flex justify-content-between mb-2">
+            <div class="sidebar_product">Preferred methods</div>
+            <div class="sidebar_product"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="delete d-flex">
+              <input type="radio" class="form-check-input" name="transactioncancel">
+              <div class="sidebar_detail" style="margin-left: 5px;">5 minutes to cancel</div>
+            </div>
+            <div class="sidebar_product"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="delete d-flex">
+              <input type="radio" class="form-check-input" name="transactioncancel">
+              <div class="sidebar_detail" style="margin-left: 5px;">Sure to my orders</div>
+            </div>
+            <div class="sidebar_product"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-red" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalSuccess">Yes</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Success Order -->
+<div class="modal fade" id="exampleModalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-yellow">
+      <div class="modal-body">
+      <div class="d-flex align-items-center flex-column">
+      
+      <div>
+        <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+      </div>
+        <h1 class="modal-title fs-5">Thank You!</h1>
+        <div class="sidebar_detail">Your order has been made.</div>
+        <button type="button" class="btn-red" data-bs-dismiss="modal" >Ok</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Account tracking Order -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalTracking" tabindex="-1" aria-labelledby="exampleModalLabelTracking" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-content bg-yellow">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabelTracking">My Orders / Tracking</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+          <article class="card-track ">
+             
+              <div class="card-body bg-yellow-container p-2">
+                  <h6>Order ID: OD45345345435</h6>
+                  <article class="card-track">
+                      <div class="card-body row d-flex justify-content-between">
+                           <div class="col "> <strong class="sidebar_product">Estimated Delivery time:</strong> <br><div class="sidebar_detail">20 mins - 30 mins</div></div>
+                          <div class="col"> <strong class="sidebar_product">Shipping BY:</strong> <br> <div class="sidebar_detail">foodhub , | <i class="fa fa-phone"></i> +1234567890 </div> </div>
+                          <div class="col"> <strong class="sidebar_product">Status:</strong> <br> 
+                         <div class="sidebar_detail">Picked by the courier</div>  </div>
+                          <div class="col"> <strong class="sidebar_product">Tracking #:</strong> <br> <div class="sidebar_detail"> BD045903594059</div> </div>
+                      </div>
+                  </article>
+                  <div class="track">
+                      <div class="step active"> <span class="icon"> <i class="fa fa-check"></i> </span> <span class="text sidebar_product text">Order confirmed</span> </div>
+                      <div class="step active"> <span class="icon"> <i class="fa fa-user"></i> </span> <span class="text sidebar_product text"> Picked by courier</span> </div>
+                      <div class="step"> <span class="icon"> <i class="fa fa-truck"></i> </span> <span class="text sidebar_product text"> On the way </span> </div>
+                      <div class="step"> <span class="icon"> <i class="fa fa-box"></i> </span> <span class="text sidebar_product text">Ready for pickup</span> </div>
+                  </div>
+                  <hr>
+                  <ul class="row">
+                      <li class="col-md-4">
+                          <figure class="itemside mb-3">
+                              <div class="aside"><img src="/asset/Chickennnn.jpg" class="img-sm border"></div>
+                              <figcaption class="info align-self-center">
+                                  <p class="sidebar_product">Chicken</p>
+                                  <div class="sidebar_detail">with gravy</div>
+                                   <span class=" sidebar_product">$40.00 </span>
+                              </figcaption>
+                          </figure>
+                      </li>
+                  </ul>
+                  <hr>
+                  <div class="mb-2 mt-2">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="sidebar_product">Order Summary</div>
+                      <div class="sidebar_product"><ion-icon name="book-outline"></ion-icon></div>
+                    </div>
+                   
+                      <div class="delete d-flex justify-content-between">
+                        <div class="sidebar_detail">Subtotal</div>
+                        <div class="sidebar_detail">₱40.00</div>
+                      </div>
+                
+                    <div class="delete d-flex justify-content-between">
+                      <div class="sidebar_detail">Shipping fee</div>
+                      <div class="sidebar_detail">₱20.00</div>
+                    </div>
+                    <div class="delete d-flex justify-content-between">
+                      <div class="sidebar_detail">Shipping discount</div>
+                      <div class="sidebar_detail text-decoration-line-through">₱55.00</div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div class="sidebar_product">Total</div>
+                      <div class="sidebar_product">₱60.00</div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="checkoutBox">
+                    <div class="checkout_price text-color-red">Total </div>
+                    <div class="checkout_price text-color-red px-2">₱60.00</div>
+                  </div>
+              </div>
+          </article>
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-red" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal Location-->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleLocation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row d-flex justify-content-between">
+              <div>            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              </div>
+              <div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="row">
+              <button type="button" class="btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body bg-yellow">
+        <div class="row">
+          <div class="d-flex justify-content-between mb-2">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Add new card</h1>
+            <button type="button" class="btn-close"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal"></button>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="floatingExdate" placeholder="Expiration date">
+            <label for="floatingExdate" style="padding-right: 5px;">Expiration Date</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="floatingSecode" placeholder="Security code">
+            <label for="floatingSecode" style="padding-right: 5px;">Security code</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingholdername" placeholder="Cardholder name">
+            <label for="floatingholdername" style="padding-right: 5px;">Cardholder name</label>
+          </div>
+          <div>
+            <button type="button" class="btn-red" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Add and continue</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Login Admin and User -->
+<div class="modal fade" id="exampleModalToggleUser" aria-hidden="true" aria-labelledby="exampleModalToggleLabelUser" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-yellow">
+      <div class="modal-body bg-yellow">
+        <div class="row">
+        <div class="col">
+          <button class="btn-red"data-bs-target="#exampleModalToggleAdmin" data-bs-toggle="modal"><ion-icon name="person-circle-outline"></ion-icon></button>
+          <p class="text-center sidebar_product">Admin Interface</p>
+        </div> 
+        </div>
+        <nav class="nav d-flex justify-content-center"><!--nav start-->
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#adminlogin">Login</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#adminSignUp">Sign Up</a></li>
+      </nav><!--nav end-->
+      <div class="tab-content m-3"><!--tab content start-->
+        <div id="adminlogin" class="tab-pane active">
+        <div class="row">
+   
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingUsernameUser" placeholder="Username">
+            <label for="floatingUsernameUser">Username</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="password" class="form-control" id="floatingPasswordUser" placeholder="Password">
+            <label for="floatingPasswordUser">Password</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="password" class="form-control" id="floatingPasswordcode" placeholder="Code">
+            <label for="floatingPasswordcode">Code</label>
+          </div>
+          <div class="text-center mt-2"><button type="button" class="btn-red text-center"  data-bs-dismiss="modal" aria-label="Close">Log in</button></div>
+          <div class="text-center">
+
+          </div>
+
+        </div>
+
+        </div>
+        
+        <div id="adminSignUp" class="tab-pane fade">
+          <div class="row">
+   
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingUsernameUser" placeholder="Username">
+              <label for="floatingUsernameUser">Username</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="email" class="form-control" id="floatingUsernameUser" placeholder="Email">
+              <label for="floatingUsernameUser">Email</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="password" class="form-control" id="floatingPasswordUser" placeholder="Password">
+              <label for="floatingPasswordUser">Password</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="password" class="form-control" id="floatingPasswordcode" placeholder="Code">
+              <label for="floatingPasswordcode">Code</label>
+            </div>
+            <div class="text-center mt-2"><button type="button" class="btn-red text-center"  data-bs-dismiss="modal" aria-label="Close">Sign in</button></div>
+            <div class="text-center">
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggleAdmin" aria-hidden="true" aria-labelledby="exampleModalToggleLabelAdmin" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-yellow">
+      <div class="modal-body bg-yellow">
+        <button class="btn-red" data-bs-target="#exampleModalToggleUser" data-bs-toggle="modal"><ion-icon name="lock-closed-outline"></ion-icon></button>
+        <p class="text-center sidebar_product">User Interface</p>
+        <nav class="nav d-flex justify-content-center"><!--nav start-->
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#login">Login</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#SignUp">Sign Up</a></li>
+      </nav><!--nav end-->
+      <div class="tab-content m-3"><!--tab content start-->
+        <div id="login" class="tab-pane active">
+        <div class="row">
+   
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingUsernameUser" placeholder="Username">
+            <label for="floatingUsernameUser">Username</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="password" class="form-control" id="floatingPasswordUser" placeholder="Password">
+            <label for="floatingPasswordUser">Password</label>
+          </div>
+          <div class="text-center mt-2"><button type="button" class="btn-red text-center"  data-bs-dismiss="modal" aria-label="Close">Log in</button></div>
+          <div class="text-center">
+          <div class="row mx-3">
+            <button type="button" class="btn-red text-center mt-2"  data-bs-dismiss="modal" aria-label="Close"><ion-icon name="logo-google" class="px-2"></ion-icon>Google</button>         
+          </div>
+
+          </div>
+
+        </div>
+
+        </div>
+        <div id="SignUp" class="tab-pane fade">
+          <div class="row">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingUsernameUser" placeholder="Username">
+              <label for="floatingUsernameUser">Username</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="email" class="form-control" id="floatingUsernameUser" placeholder="Email">
+              <label for="floatingUsernameUser">Email</label>
+            </div>
+            <div class="form-floating mt-2">
+              <input type="password" class="form-control" id="floatingPasswordUser" placeholder="Password">
+              <label for="floatingPasswordUser">Password</label>
+            </div>
+            <div class="text-center mt-2"><button type="button" class="btn-red text-center"  data-bs-dismiss="modal" aria-label="Close">Sign in</button></div>
+            <div class="text-center">
+            <div class="row mx-3">
+              <button type="button" class="btn-red text-center mt-2"><ion-icon name="logo-google" class="px-2" data-bs-dismiss="modal" aria-label="Close"></ion-icon>Sign in with Google</button>         
+            </div>
+  
+            </div>
+            
+            
+            
+            
+        
+          </div>
+        </div>
+    </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<header>
+  <a href="#" class="site-logo" aria-label="homepage">IntObs</a>
+  <div class="burger__menu"><ion-icon name="menu-outline"></ion-icon></div>
+  <nav class="main-nav">
+    <ul class="nav__list">
+      <li class="nav__list-item"><a href="#home" class="nav__link">Home</a></li>
+      <li class="nav__list-item">
+        <a href="#service" class="nav__link">Service</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="#menu" class="nav__link">Menu</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="#about" class="nav__link">About</a>
+      </li>
+      <li class="nav__list-item"><a href="#contact" class="nav__link">Contact</a></li>
+      
+      <li class="nav__list-item"><a href="#review" class="nav__link">Review</a></li>
+      <li class="nav__list-item"><a href="#" class="nav__link">
+        <span class="material-symbols-outlined cart_input position-relative" onclick="openNav()">shopping_cart
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-yellow">
+            2
+          </span>
+        
+        </span>
+      </a></li>
+    </ul>
+  </nav>
+  <nav class="account">
+    <ul class="nav__list">
+      <!-- <li class="nav__list-item">
+        <a class="nav__link nav__link--btn" href="#">Login</a>
+      </li>
+      <li class="nav__list-item">
+        <a
+          class="nav__link nav__link--btn nav__link--btn highlight"
+          href="#"
+          >Sign In</a
+        >
+      </li> -->
+      
+      <!-- Dropdown account -->
+      <li class="nav__list-item">
+      <div class="dropdown">
+        <a class="nav__link" data-bs-toggle="dropdown" aria-expanded="false" ><span class="material-symbols-outlined">
+          account_circle
+          </span></a>
+          <ul class="dropdown-menu bg-yellow">
+            <li data-bs-toggle="modal" data-bs-target="#exampleModalTracking"><a class="dropdown-item" href="#"><ion-icon name="list-outline" class="px-2 sidebar_product fs-5"></ion-icon>Track orders</a></li>
+            <li><a class="dropdown-item" href="#"><ion-icon name="ticket-outline" class="px-2 sidebar_product fs-5"></ion-icon>Coupons</a></li>
+            <li><a class="dropdown-item" href="#"><ion-icon name="chatbubble-ellipses-outline" class="px-2 sidebar_product fs-5"></ion-icon>Messages</a></li>
+            <li><a class="dropdown-item" href="#"><ion-icon name="location-outline" class="px-2 sidebar_product fs-5"></ion-icon>Address</a></li>
+            <li><a class="dropdown-item" href="#"><ion-icon name="help-circle-outline" class="px-2 sidebar_product fs-5"></ion-icon>Help</a></li>
+            <li><a class="dropdown-item" href="#"><ion-icon name="log-in-outline" class="px-2 sidebar_product fs-5"></ion-icon>Log out</a></li>
+          </ul>
+      </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+    <section class="landing_page">
+      <div class="grid-box">
+        <div class="left-side">
+        <div class="offer">Our Special Dish</div>
+          <h1>Crispy King</h1>
+          <div class="offer">Busog, Sarap at Budget!</div>
+          <span></span>
+          
+          <button class="highlight nav__link--btn btn-width  mt-3" data-bs-target="#exampleModalToggleAdmin" data-bs-toggle="modal">
+            Order Now!
+          </button>
+        </div>
+
+        <!-- Modal -->
+
+        <!--Menu Modal -->
+<div class="modal fade" id="exampleModalanother" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content bg-yellow">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mx-1">
+          <div class="addtocart bg-yellow-container">
+            <div class="addtocart-gridPlaceOrder">
+              <div class="img">
+                <img src="/asset/Chickennnn.jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <div class="sidebar_product">Chicken Leg</div>
+                <div class="sidebar_price">₱40.00</div>
+              </div>
+              <div class="input-group">
+                <button class="minusAdd" type="button"><ion-icon name="remove-outline"></ion-icon></button>
+                <input type="text" class="form-control" placeholder="1">
+              <span class="input-group-btn"></span>
+              <button class="minusAdd" type="button"><ion-icon name="add-outline"></ion-icon></button>         
+            </div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="sidebar_product">Add-on Sides</div>
+              <div class="sidebar_product">Optional</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="delete d-flex">
+                <input type="radio">
+                <div class="sidebar_detail" style="margin-left: 5px;">With Gravy</div>
+              </div>
+              <div class="sidebar_product">Free</div>
+            </div>
+            </div>
+            <div class="addNote bg-yellow-container mt-2">
+              <div class="d-flex justify-content-end mb-2">
+                
+             
+                <div class="sidebar_product">Optional (Rice)</div>
+              </div>
+              <div class="addtocart-gridPlaceOrder">
+              <div class="img">
+                <img src="/asset/Chickennnn.jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <div class="sidebar_product">Rice</div>
+                <div class="sidebar_price">₱10.00</div>
+              </div>
+              <div class="input-group">
+                <button class="minusAdd" type="button"><ion-icon name="remove-outline"></ion-icon></button>
+                <input type="text" class="form-control" placeholder="0">
+              <span class="input-group-btn"></span>
+              <button class="minusAdd" type="button"><ion-icon name="add-outline"></ion-icon></button>         
+            </div>
+            </div>
+            </div>
+            <div class="addNote bg-yellow-container mt-2">
+              <div class="d-flex justify-content-end mb-2">
+                <div class="sidebar_product">Optional (Drinks)</div>
+                
+              </div>
+              <div class="addtocart-gridPlaceOrder">
+              <div class="img">
+                <img src="/asset/Chickennnn.jpg" alt="" srcset="">
+              </div>
+              <div class="details">
+                <div class="sidebar_product">Mountain Dew</div>
+                <div class="sidebar_price">₱15.00</div>
+              </div>
+              <div class="input-group">
+                <button class="minusAdd" type="button"><ion-icon name="remove-outline"></ion-icon></button>
+                <input type="text" class="form-control" placeholder="0">
+              <span class="input-group-btn"></span>
+              <button class="minusAdd" type="button"><ion-icon name="add-outline"></ion-icon></button>         
+            </div>
+            </div>
+
+            </div>
+        </div>
+
+        </div>
+    
+        <div class="modal-footer d-flex justify-content-between">
+          <div class="checkoutBox">
+            <div class="checkout_price text-color-red">Total </div>
+            <div class="checkout_price text-color-red px-2">₱40.00</div>
+          </div>
+          <div>
+            <button type="button" class="btn-red" data-bs-dismiss="modal" aria-label="Close">Add to cart</button>
+          </div>
+        </div>
+    
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="right-side">
+    <div class="container">
+      <input type="radio" name="slider" class="d-none" id="s1" checked />
+      <input type="radio" name="slider" class="d-none" id="s2" />
+      <input type="radio" name="slider" class="d-none" id="s3" />
+      <input type="radio" name="slider" class="d-none" id="s4" />
+      <input type="radio" name="slider" class="d-none" id="s5" />
+
+      <div class="cards">
+        <label for="s1" id="slide1">
+          <div class="card">
+            <div class="card_box">
+              <div class="product__cardBox">
+                <div class="ck__name">Chicken</div>
+                <div class="ck__img">
+                  <img src="/asset/Chickennnn.jpg" alt="" srcset="">
+                </div>
+                <div class="ck__name">P40.00</div>
+              </div>
+              <!-- <span></span> -->
+            </div>
+          </div>
+        </label>
+
+        <label for="s2" id="slide2">
+          <div class="card">
+            <div class="card_box">
+              <div class="product__cardBox">
+                <div class="ck__name">Chicken</div>
+                <div class="ck__img">
+                  <img src="/asset/Chickennnn.jpg" alt="" srcset="">
+                </div>
+                <div class="ck__name">P40.00</div>
+              </div>
+              <!-- <span></span> -->
+            </div>
+          </div>
+        </label>
+
+        <label for="s3" id="slide3">
+          <div class="card">
+            <div class="card_box">
+              <div class="product__cardBox">
+                <div class="ck__name">Bola-Bola</div>
+                <div class="ck__img">
+                  <img src="/asset/Bola-Bolaaaa.jpg" alt="" srcset="">
+                </div>
+                <div class="ck__name">P10.00</div>
+              </div>
+              <!-- <span></span> -->
+            </div>
+          </div>
+        </label>
+
+        <label for="s4" id="slide4">
+          <div class="card">
+            <div class="card_box">
+              <div class="product__cardBox">
+                <div class="ck__name">Lumpia</div>
+                <div class="ck__img">
+                  <img src="/asset/Lumpiaaaa.jpg" alt="" srcset="">
+                </div>
+                <div class="ck__name">P12.00</div>
+              </div>
+              <!-- <span></span> -->
+            </div>
+          </div>
+        </label>
+
+        <label for="s5" id="slide5">
+          <div class="card">
+            <div class="card_box">
+              <div class="product__cardBox">
+                <div class="ck__name">Ngohiong</div>
+                <div class="ck__img">
+                  <img src="/asset/Ngohiongggg.jpg" alt="" srcset="">
+                </div>
+                <div class="ck__name">P20.00</div>
+              </div>
+              <!-- <span></span> -->
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <section class="service-page" id="service">
+      <div class="container">
+      <div class="service-box">
+        <div class="tagname">
+          <span>We Offer</span>
+          <h1>SERVICES</h1>
+        </div>
+        <div class="service-grid">
+          <div class="service1">
+            <img src="/asset/service1.png" alt="" srcset="">
+          </div>
+          <div class="service2">
+            <img src="/asset/service2.png" alt="" srcset="">
+          </div>
+          <div class="service3">
+            <img src="/asset/service3.png" alt="" srcset="">
+          </div>
+          <div class="service4">
+            <img src="/asset/service4.png" alt="" srcset="">
+          </div>
+        </div>      
+      </div>
+
+      </div>
+    </section>
+    <section class="menu-page" id="menu">
+      <div class="container">
+        <div class="menu-box">
+          <div class="tagname">
+            <span>Our Menu</span>
+            <h1>CRISPY KING</h1>
+            <div class="input-group">
+                <button class="btn-yellow  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chicken</a></li>
+                  <li><a class="dropdown-item" href="#">Drink</a></li>
+                  <li><a class="dropdown-item" href="#">Other</a></li>
+                </ul>
+              <input type="text" class="form-control" placeholder="Search foood..">
+              <span class="input-group-btn"></span>
+              <button class="btn-yellow " type="button">Search</button>         
+            </div>
+          </div>
+          <div class=" slide-container-review swiper">
+            <div class="slide-content">
+                <div class="card-wrapper-review swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="menu">
+                        <div class="menu-container">
+                          <div class="menu-img">
+                            <img src="/asset/Chickennnn.jpg" alt="">
+                            <div class="displayheart"><ion-icon name="heart-outline"></ion-icon>
+                          </div>
+                          </div>
+                          <div class="rate">
+                            <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star_half
+                              </span>
+                          </div>
+                          <div class="productName">Chicken</div>
+                          <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quam ipsam cupiditate laudantium consectetur magni tenetur animi obcaecati earum distinctio reprehenderit recusandae, dicta libero, rerum, quisquam vitae nostrum ut tempora.</div>
+                          <div class="btnCartPrice">
+                            <div class="productName">₱40.00</div>
+                            <div class="btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModalanother">Add to Cart</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="menu">
+                        <div class="menu-container">
+                          <div class="menu-img">
+                            <img src="/asset/Ngohiongggg.jpg" alt="">
+                            <div class="displayheart"><ion-icon name="heart-outline"></ion-icon>
+                          </div>
+                          </div>
+                          <div class="rate">
+                            <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star_half
+                              </span>
+                          </div>
+                          <div class="productName">Ngohiong</div>
+                          <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quam ipsam cupiditate laudantium consectetur magni tenetur animi obcaecati earum distinctio reprehenderit recusandae, dicta libero, rerum, quisquam vitae nostrum ut tempora.</div>
+                          <div class="btnCartPrice">
+                            <div class="productName">₱12.00</div>
+                            <div class="btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModalanother">Add to Cart</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="menu">
+                        <div class="menu-container">
+                          <div class="menu-img">
+                            <img src="/asset/Siomaiiiii.jpg" alt="">
+                            <div class="displayheart"><ion-icon name="heart-outline"></ion-icon>
+                          </div>
+                          </div>
+                          <div class="rate">
+                            <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star_half
+                              </span>
+                          </div>
+                          <div class="productName">Siomai</div>
+                          <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quam ipsam cupiditate laudantium consectetur magni tenetur animi obcaecati earum distinctio reprehenderit recusandae, dicta libero, rerum, quisquam vitae nostrum ut tempora.</div>
+                          <div class="btnCartPrice">
+                            <div class="productName">₱30.00</div>
+                            <div class="btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModalanother">Add to Cart</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="menu">
+                        <div class="menu-container">
+                          <div class="menu-img">
+                            <img src="/asset/Lumpiaaaa.jpg" alt="">
+                            <div class="displayheart"><ion-icon name="heart-outline"></ion-icon>
+                          </div>
+                          </div>
+                          <div class="rate">
+                            <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star_half
+                              </span>
+                          </div>
+                          <div class="productName">Lumpia</div>
+                          <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quam ipsam cupiditate laudantium consectetur magni tenetur animi obcaecati earum distinctio reprehenderit recusandae, dicta libero, rerum, quisquam vitae nostrum ut tempora.</div>
+                          <div class="btnCartPrice">
+                            <div class="productName">₱8.00</div>
+                            <div class="btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModalanother">Add to Cart</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="menu">
+                        <div class="menu-container">
+                          <div class="menu-img">
+                            <img src="/asset/Bola-Bolaaaa.jpg" alt="">
+                            <div class="displayheart"><ion-icon name="heart-outline"></ion-icon>
+                          </div>
+                          </div>
+                          <div class="rate">
+                            <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star
+                              </span>
+                              <span class="material-symbols-outlined">
+                              star_half
+                              </span>
+                          </div>
+                          <div class="productName">Bola Bola</div>
+                          <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quam ipsam cupiditate laudantium consectetur magni tenetur animi obcaecati earum distinctio reprehenderit recusandae, dicta libero, rerum, quisquam vitae nostrum ut tempora.</div>
+                          <div class="btnCartPrice">
+                            <div class="productName">₱10.00</div>
+                            <div class="btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModalanother">Add to Cart</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+  
+        </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="service-box" style="margin-top: 2rem;">
+          <div class="tagname">
+            <span>About Us</span>
+            <h1>Connect With Us</h1>
+          </div>
+            <div class="slide-container-review swiper">
+              <div class="slide-content">
+                  <div class="card-wrapper-review swiper-wrapper">
+                    <div class="card-review swiper-slide">
+                      <div class="card-about">
+                        <div class="img-about">
+                          <img src="./asset/BRITON.jpg">
+                        </div>
+                        <span class="heading-about">Jolie Kris Briton</span>
+                        <p class="icon-about">
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
+                          </svg>
+                        </p></div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                      <div class="card-about">
+                        <div class="img-about">
+                          <img src="./asset/ESTILLERO.jpg">
+                        </div>
+                        <span class="heading-about">Ronnie F. Estillero</span>
+                        <p class="icon-about">
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
+                          </svg>
+                        </p></div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                      <div class="card-about">
+                        <div class="img-about">
+                          <img src="./asset/JOB.jpg">
+                        </div>
+                        <span class="heading-about">Mariella Joy Job</span>
+                        <p class="icon-about">
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
+                          </svg>
+                        </p></div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                      <div class="card-about">
+                        <div class="img-about">
+                          <img src="./asset/OGABAN.jpg">
+                        </div>
+                        <span class="heading-about">Agnes V. Ogaban</span>
+                        <p class="icon-about">
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
+                          </svg>
+                        </p></div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                      <div class="card-about">
+                        <div class="img-about">
+                          <img src="./asset/MADRIDANO.jpg">
+                        </div>
+                        <span class="heading-about">Zoren Madridano</span>
+                        <p class="icon-about">
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path>
+                          </svg>
+                          <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="black" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
+                          </svg>
+                        </p></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    
+    <section class="contant" id="contact">
+      <div class="container">
+        <div class="menu-box" style="margin-top: 2rem;">
+          <div class="tagname">
+            <span>Say Your Story</span>
+            <h1>Contact Us</h1>
+          </div>
+          <div class="contact-form">
+          <div class="row">
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingname" placeholder="Your name">
+                <label for="floatingname">Your name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingFood" placeholder="Your email">
+                <label for="floatingFood">Your email</label>
+              </div>
+            </div>
+            <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingNumber" placeholder="Your number">
+              <label for="floatingNumber">Your number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingAdd" placeholder="Your concern">
+              <label for="floatingAdd">Your concern</label>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave your address here.." id="floatingTextarea1" style="height: 200px"></textarea>
+              <label for="floatingTextarea1">Leave your address here..</label>
+            </div>
+            <div class="mt-3 btn-red text-center">Submit</div>
+          </div>
+          
+          </div>
+        </div>
+        </div>    
+    </section>
+    <section class="about-page" id="review">
+      <div class="container">
+        <div class="service-box" style="margin-top: 2rem;">
+          <div class="tagname">
+            <span>Customer's Review</span>
+            <h1>WHAT THEY SAY</h1>
+          </div>
+          <div class="slide-container-review swiper">
+            <div class="slide-content">
+                <div class="card-wrapper-review swiper-wrapper">
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index1.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center">Hinata Hyuga</h2>
+                            <div class="collapse" id="description">
+                                <p class="description-review">"Your website portfolio showcases an impressive range of skills and talents. It's evident that you're a versatile and creative professional!"</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#description">Message</button> 
+                        </div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index2.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center">Orihime Inoue</h2>
+                            <div class="collapse" id="review6">
+                                <p class="description-review">"I love how your website portfolio captures your unique style and personality. It's refreshing and engaging!"</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#review6">Message</button> 
+                        </div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index3.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center"> Milim Nava</h2>
+                            <div class="collapse" id="review5">
+                                <p class="description-review">"The user experience of your website portfolio is top-notch. It's easy to navigate and beautifully organized."</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#review5">Message</button> 
+                        </div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index4.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center">SHIGURE SOHMA</h2>
+                            <div class="collapse" id="review4">
+                                <p class="description-review">"Your website portfolio is a visual delight! The design choices and attention to detail truly make your work stand out."</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#review4">Message</button> 
+                        </div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index5.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center">TANJIRO KAMADO</h2>
+                            <div class="collapse" id="review3">
+                                <p class="description-review">"Your website portfolio effectively showcases your expertise and accomplishments. It's inspiring to see your body of work!"</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#review3">Message</button> 
+                        </div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index6.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center">SHOYO HINATA</h2>
+                            <div class="collapse" id="review2">
+                                <p class="description-review">"I'm impressed by the variety and depth of projects in your website portfolio. It's evident that you're constantly pushing your boundaries."</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#review2">Message</button> 
+                        </div>
+                    </div>
+                    <div class="card-review swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay-review"></span>
+                            <div class="card-image">
+                                <img src="/asset/index7.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content-review d-flex justify-content-center flex-column">
+                            <h2 class="name-review d-flex justify-content-center">JKILLUA ZOLDYCK</h2>
+                            <div class="collapse" id="review1">
+                                <p class="description-review">"Your website portfolio is a testament to your professionalism and dedication. It's clear that you go above and beyond for your clients."</p>
+                                <div class="icon-review d-flex justify-content-center">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <div class="link-review mb-2 d-flex justify-content-center">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-github"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <button class="btn-red" data-bs-toggle="collapse" data-bs-target="#review1">Message</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        </div>
+        </div>    
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="menu-box" style="margin-top: 2rem;">
+          <div class="contact-form">
+            <div class="row">
+              <div class="col-sm-12">
+                  <div class="content">
+                      <h2>SUBSCRIBE NOW</h2>
+                      <h6 class="content-tuned">Subscribe to our newsletter and stay tuned with future updates</h6>
+                  <div class="input-group">
+                       <input type="email" class="form-control" placeholder="Enter email to subscribe">
+                       <span class="input-group-btn"></span>
+                       <button class="btn-red" type="button">Subscribe Now</button>         
+                        </div>
+                        <div class="text-center mt-2">
+                          <span class="subscriber-text">Would you like to unsubscribe?</span> 
+                        </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
+        </div>
     </section>
   </body>
+  <script src="/js/index.js"></script>
+      <!-- ====== ionicons ======= -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
 </html>
+
+

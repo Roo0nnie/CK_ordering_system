@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<!-- Icons -->
+<link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+<link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container-wrapper">
+        <div class="navigation bg-yellow">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="ellipsis-vertical-outline"></ion-icon>                        </span>
+                        <span class="title">Logo</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline" class="text-white"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="archive-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="storefront-outline"></ion-icon>
+                        </span>
+                        <span class="title">Order</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                        </span>
+                        <span class="title">History</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                        </span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- ========================= Main ==================== -->
+        <div class="main ">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline" class="text-white"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" class="form-control" list="datalistChickenProduct" id="exampleDataList" placeholder="Search product..">
+                        <ion-icon name="search-outline" class="mt-2"></ion-icon>
+                        <datalist id="datalistChickenProduct">
+                            <option value="Chickcen Wing">
+                            <option value="Chickcen Leg">
+                            <option value="Chickcen Breast">
+                            <option value="Chickcen Thigh">
+                        </datalist>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <div class="dropdown bg-yellow">
+                        <div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    </div>
+                        <ul class="dropdown-menu bg-yellow">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Setting</a></li>
+                          <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card active">
+                    <div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-between">
+                                <div class="cardName">
+                                    <h2>Dashboard <span class="badge btn-red"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardProduct">
+                            <div class="productBox">
+                                <div>
+                                    <div class="sidebar_product">TOTAL USERS</div>
+                                    <div>
+                                    <div><span class="fs-5 px-2">24</span><span>from 22</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productBox">
+                                <div>
+                                    <div class="sidebar_product">ACTIVE MEMBERS</div>
+                                    <div>
+                                    <div><span class="fs-5 px-2">10</span><span>from 15</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productBox">
+                                <div>
+                                    <div class="sidebar_product">NEW RETURNING</div>
+                                    <div>
+                                    <div><span class="fs-5 px-2">58%</span><span>from 47.%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productBox">
+                                <div>
+                                    <div class="sidebar_product">ACTIVE MEMBERS</div>
+                                    <div>
+                                    <div><span class="fs-5 px-2">10</span><span>from 15</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardVisual">
+                            <div class="visualBox">
+                                <div>
+                                    <div class="cardName">Top Product</div>
+                                    <div class="wrapper-visual">
+                                        <img src="/assets/imgs/2.png" alt="weekly Order" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visualBox">
+                                <div>
+                                    <div class="cardName">Sales & Purchased Order</div>
+                                    <div class="wrapper-visual">
+                                        <img src="/assets/imgs/1.png" alt="weekly Sales" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+            <!-- ================ Customer account list ================= -->
+            <div>
+                
+                
+                <nav class="nav"><!--nav start-->
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#Allorders">All</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#openOrders">Sales</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#">Accounts</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#">Reviews</a></li>
+                </nav><!--nav end-->
+                <div class="tab-content m-3"><!--tab content start-->
+                    <div id="Allorders" class="tab-pane active">
+                        <div class="details">
+                            <div class="recentOrders">
+                                <div class="cardHeader">
+                                    
+                                    <a href="#" class="btn-red">View All</a>
+                                </div>
+              <div class="table-responsive bg-yellow-container mt-2" >
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search name..">
+                    <span class="input-group-btn"></span>
+                    <button class="btn-red" type="button">Search</button>         
+                     </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <td style="width: 25%;">Name</td>
+                            <td style="width: 25%;">Country</td>
+                            <td style="width: 25%;">Status</td>
+                            <td style="width: 25%;">Action</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-striped">
+                        <tr>
+                            <td>Williams Tonston</td>
+                            <td>Sorsogon, Sorsogon City</td>
+                            <td>
+                                <div>
+                                    <input type="radio" class="form-check-input" checked>
+                                    <label for="">Active</label>
+                                </div>
+                                
+                            </td>
+                            <td><button type="button" class="btn-yellow" data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>    
+                        </tr>
+                        <tr>
+                            <td>Williams Tonston</td>
+                            <td>Sorsogon, Sorsogon City</td>
+                            <td>
+                                <div>
+                                    <input type="radio" class="form-check-input" >
+                                    <label for="">Not active</label>
+                                </div>
+                                
+                            </td>
+                            <td><button type="button" class="btn-yellow" data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Williams Tonston</td>
+                            <td>Sorsogon, Sorsogon City</td>
+                            <td>
+                                <div>
+                                    <input type="radio" class="form-check-input" checked>
+                                    <label for="">Active</label>
+                                </div>
+                                
+                            </td>
+                            <td><button type="button" class="btn-yellow"  data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>  
+                        </tr>
+                        <tr>
+                            <td>Williams Tonston</td>
+                            <td>Sorsogon, Sorsogon City</td>
+                            <td>
+                                <div>
+                                    <input type="radio" class="form-check-input" checked>
+                                    <label for="">Active</label>
+                                </div>
+                                
+                            </td>
+                            <td><button type="button" class="btn-yellow"  data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>  
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+                            </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="openOrders" class="tab-pane fade">
+                    </div>
+            </div>
+                </div>
+                </div>
+
+                <div class="card">
+                <!-- ======================= Customer Dashboard ================== -->
+                    <div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="cardName">
+                                        <h2>Customer <span class="badge btn-red">12,000</span></h2>
+                                    </div>
+                                    <button class="btn-red" data-bs-toggle="modal" data-bs-target="#addCustomer">Add Customer</button>
+                                    
+                                    <div class="modal fade" id="addCustomer" tabindex="-1" aria-labelledby="exampleModalAddCustomer" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog modal-xl modal-dialog-centered">
+                                          <div class="modal-content bg-yellow">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalAddCustomer">Add customer</h1>
+                                              <div class="row">
+                                                <div class="col">
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                              </div>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <label for="" class="form-label">Account Information</label>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-4">
+                                                                        <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                                                                        <label for="floatingName">Name</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-4">
+                                                                        <input type="text" class="form-control" id="floatingLast" placeholder="Last">
+                                                                        <label for="floatingLast">Last</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-2">
+                                                                        <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
+                                                                        <label for="floatingEmail">Email</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="form-floating mt-2">
+                                                                    <input type="text" class="form-control" id="floatingPhone" placeholder="Phone">
+                                                                    <label for="floatingPhone" class="px-4">Phone</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="" class="form-label">Shipping Address</label>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-4">
+                                                                        <input type="text" class="form-control" id="floatingLocation" placeholder="Location">
+                                                                        <label for="floatingLocation">Location</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-2">
+                                                                        <input type="text" class="form-control" id="floatingCode" placeholder="Zip Cod">
+                                                                        <label for="floatingCode">Zip Code</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-2">
+                                                                        <input type="text" class="form-control" id="floatingAddress1" placeholder="Address Line 1">
+                                                                        <label for="floatingAddress1">Address Line 1</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-2">
+                                                                        <input type="text" class="form-control" id="floatingAddress2" placeholder="Address Line 2">
+                                                                        <label for="floatingAddress2">Address Line 2</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="" class="form-label">Shipping Address</label>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-4">
+                                                                        <input type="text" class="form-control" id="floatingUser" placeholder="Username">
+                                                                        <label for="floatingUser">Username</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-2">
+                                                                        <input type="password" class="form-control" id="floatingPass1" placeholder="Password">
+                                                                        <label for="floatingPass1">Password</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-floating mt-2">
+                                                                        <input type="password" class="form-control" id="floatingPass" placeholder="Confirm Password">
+                                                                        <label for="floatingPass">Confirm Password</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn-yellow" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn-red" data-bs-dismiss="modal">Add</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="cardProduct">
+                                <div class="productBox">
+                                    <div>
+                                        <div class="sidebar_product">TOTAL USERS</div>
+                                        <div>
+                                        <div><span class="fs-5 px-2">24</span><span>from 22</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productBox">
+                                    <div>
+                                        <div class="sidebar_product">ACTIVE MEMBERS</div>
+                                        <div>
+                                        <div><span class="fs-5 px-2">10</span><span>from 15</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productBox">
+                                    <div>
+                                        <div class="sidebar_product">NEW RETURNING</div>
+                                        <div>
+                                        <div><span class="fs-5 px-2">58%</span><span>from 47.%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productBox">
+                                    <div>
+                                        <div class="sidebar_product">ACTIVE MEMBERS</div>
+                                        <div>
+                                        <div><span class="fs-5 px-2">10</span><span>from 15</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                <!-- ================ Customer account list ================= -->
+                <div>
+                    
+                    
+                    <nav class="nav"><!--nav start-->
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#Allorders">All orders</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#openOrders">Open</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#">Unfulfill</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#">Unpaid</a></li>
+                    </nav><!--nav end-->
+                    <div class="tab-content m-3"><!--tab content start-->
+                        <div id="Allorders" class="tab-pane active">
+                            <div class="details">
+                                <div class="recentOrders">
+                                    <div class="cardHeader">
+                                        
+                                        <a href="#" class="btn-red">View All</a>
+                                    </div>
+                  <div class="table-responsive bg-yellow-container mt-2" >
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="search name..">
+                        <span class="input-group-btn"></span>
+                        <button class="btn-red" type="button">Search</button>         
+                         </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td style="width: 25%;">Name</td>
+                                <td style="width: 25%;">Country</td>
+                                <td style="width: 25%;">Status</td>
+                                <td style="width: 25%;">Action</td>
+                            </tr>
+                        </thead>
+    
+                        <tbody class="table-striped">
+                            <tr>
+                                <td>Williams Tonston</td>
+                                <td>Sorsogon, Sorsogon City</td>
+                                <td>
+                                    <div>
+                                        <input type="radio" class="form-check-input" checked>
+                                        <label for="">Active</label>
+                                    </div>
+                                    
+                                </td>
+                                <td><button type="button" class="btn-yellow" data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>    
+                            </tr>
+                            <tr>
+                                <td>Williams Tonston</td>
+                                <td>Sorsogon, Sorsogon City</td>
+                                <td>
+                                    <div>
+                                        <input type="radio" class="form-check-input" >
+                                        <label for="">Not active</label>
+                                    </div>
+                                    
+                                </td>
+                                <td ><button type="button" class="btn-yellow" data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Williams Tonston</td>
+                                <td>Sorsogon, Sorsogon City</td>
+                                <td>
+                                    <div>
+                                        <input type="radio" class="form-check-input" checked>
+                                        <label for="">Active</label>
+                                    </div>
+                                    
+                                </td>
+                                <td><button type="button" class="btn-yellow" data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>  
+                            </tr>
+                            <tr>
+                                <td>Williams Tonston</td>
+                                <td>Sorsogon, Sorsogon City</td>
+                                <td>
+                                    <div>
+                                        <input type="radio" class="form-check-input" checked>
+                                        <label for="">Active</label>
+                                    </div>
+                                    
+                                </td>
+                                <td><button type="button" class="btn-yellow" data-bs-target="#exampleModalcustomerlist" data-bs-toggle="modal"><ion-icon name="pencil-outline" ></ion-icon>Edit</button><button type="button" class="btn-red px-1">Delete</button></td>  
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                                </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div id="openOrders" class="tab-pane fade">
+                        </div>
+                </div>
+                    </div>
+                </div>
+                <!-- ======================= Inventory Dashboard ================== -->
+                <div class="card">
+                    <div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-between">
+                                <div class="cardName">
+                                    <h2>Inventory <span class="badge btn-red">6</span></h2>
+                                </div>
+                                <button class="btn-red" data-bs-toggle="modal" data-bs-target="#addProduct">Add product</button>
+                                
+                            </div>
+                        </div>
+            <div>
+                <nav class="nav"><!--nav start-->
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#Allproducts">All products</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#archived">Archived</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#publish">Publish</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#unpublish">Unpublish</a></li>
+                </nav><!--nav end-->
+                <div class="tab-content m-3"><!--tab content start-->
+                    <div id="Allproducts" class="tab-pane active">
+                        <div class="details">
+                            <div class="recentOrders">
+                                <div class="cardHeader">
+                                    
+                                    <a href="#" class="btn-red">View All</a>
+                                    <a href="#" class="btn-red" data-bs-target="#exampleModalinsufficient" data-bs-toggle="modal">.</a>
+                                </div>
+              <div class="table-responsive bg-yellow-container mt-2" >
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search name..">
+                    <span class="input-group-btn"></span>
+                    <button class="btn-red" type="button">Search</button>         
+                     </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <td style="width: 20%;">Product</td>
+                            <td style="width: 10%;">Type</td>
+                            <td style="width: 20%;">Stock</td>
+                            <td style="width: 10%;">Price</td>
+                            <td style="width: 20%;">Variant</td>
+                            <td style="width: 20%;">Action</td>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-striped">
+                        <tr>
+                            <td>Chicken</td>
+                            <td>Food</td>
+                            <td>50</td>
+                            <td>₱40.00</td>
+                            <td>4</td>
+                            <td><div class="dropdown">
+                                <button class="btn-yellow dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Edit
+                                </button>
+                                <ul class="dropdown-menu bg-yellow">
+                                  <li><a class="dropdown-item" href="#" data-bs-target="#exampleModaldelete" data-bs-toggle="modal">Delete</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-target="#updateproduct" data-bs-toggle="modal">Update</a></li>
+                                  <li><a class="dropdown-item" href="#">Archive</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish</a></li>
+                                  <li><a class="dropdown-item" href="#">Unpublish</a></li>
+                                </ul>
+                              </div></td>
+                        </tr>
+                        <tr>
+                            <td>Ngohiong</td>
+                            <td>Food</td>
+                            <td>50</td>
+                            <td>₱12.00</td>
+                            <td>1</td>
+                            <td><div class="dropdown">
+                                <button class="btn-yellow dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Edit
+                                </button>
+                                <ul class="dropdown-menu bg-yellow">
+                                  <li><a class="dropdown-item" href="#"  data-bs-target="#exampleModaldelete" data-bs-toggle="modal">Delete</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-target="#updateproduct" data-bs-toggle="modal">Update</a></li>
+                                  <li><a class="dropdown-item" href="#">Archive</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish</a></li>
+                                  <li><a class="dropdown-item" href="#">Unpublish</a></li>
+                                </ul>
+                              </div></td>
+                        </tr>
+                        <tr>
+                            <td>Siomai</td>
+                            <td>Food</td>
+                            <td>100</td>
+                            <td>₱30.00</td>
+                            <td>1</td>
+                            <td><div class="dropdown">
+                                <button class="btn-yellow dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Edit
+                                </button>
+                                <ul class="dropdown-menu bg-yellow">
+                                  <li><a class="dropdown-item" href="#"  data-bs-target="#exampleModaldelete" data-bs-toggle="modal">Delete</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-target="#updateproduct" data-bs-toggle="modal">Update</a></li>
+                                  <li><a class="dropdown-item" href="#">Archive</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish</a></li>
+                                  <li><a class="dropdown-item" href="#">Unpublish</a></li>
+                                </ul>
+                              </div></td>
+                        </tr>
+                        <tr>
+                            <td>Lumpia</td>
+                            <td>Food</td>
+                            <td>50</td>
+                            <td>₱8.00</td>
+                            <td>1</td>
+                            <td><div class="dropdown">
+                                <button class="btn-yellow dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Edit
+                                </button>
+                                <ul class="dropdown-menu bg-yellow">
+                                  <li><a class="dropdown-item" href="#"  data-bs-target="#exampleModaldelete" data-bs-toggle="modal">Delete</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-target="#updateproduct" data-bs-toggle="modal">Update</a></li>
+                                  <li><a class="dropdown-item" href="#">Archive</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish</a></li>
+                                  <li><a class="dropdown-item" href="#">Unpublish</a></li>
+                                </ul>
+                              </div></td>
+                        </tr>
+                        <tr>
+                            <td>Bola-Bola</td>
+                            <td>Food</td>
+                            <td>60</td>
+                            <td>₱10.00</td>
+                            <td>1</td>
+                            <td><div class="dropdown">
+                                <button class="btn-yellow dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Edit
+                                </button>
+                                <ul class="dropdown-menu bg-yellow">
+                                  <li><a class="dropdown-item" href="#"  data-bs-target="#exampleModaldelete" data-bs-toggle="modal">Delete</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-target="#updateproduct" data-bs-toggle="modal">Update</a></li>
+                                  <li><a class="dropdown-item" href="#">Archive</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish</a></li>
+                                  <li><a class="dropdown-item" href="#">Unpublish</a></li>
+                                </ul>
+                              </div></td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+                            </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="archived" class="tab-pane fade">
+                    </div>
+                    <div id="publish" class="tab-pane fade">
+                    </div>
+                    <div id="unpublish" class="tab-pane fade">
+                    </div>
+            </div>
+                    </div>
+                </div>
+                
+                <!-- ======================= Order Dashboard  ================== -->
+                <div class="card">
+                    <div>
+                        <h2>Orders <span class="badge btn-red">12,000</span></h2>
+                        <div class="d-flex align-self-center" >
+                            <div><ion-icon name="download-outline"></ion-icon> Export</div>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  More option
+                                </button>
+                                <ul class="dropdown-menu bg-yellow">
+                                  <li><a class="dropdown-item" href="#">New orders</a></li>
+                                  <li><a class="dropdown-item" href="#">New orders</a></li>
+                                  <li><a class="dropdown-item" href="#">New orders</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        
+                        <nav class="nav"><!--nav start-->
+                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#Allorders">All orders</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#openOrders">Open</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#">Unfulfill</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#">Unpaid</a></li>
+                        </nav><!--nav end-->
+                        <div class="tab-content m-3"><!--tab content start-->
+                            <div id="Allorders" class="tab-pane active">
+                                <div class="details">
+                                    <div class="recentOrders">
+                                        <div class="cardHeader">
+                                            
+                                            <a href="#" class="btn-red">View All</a>
+                                        </div>
+                      <div class="table-responsive bg-yellow-container mt-2" >
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search customer">
+                            <span class="input-group-btn"></span>
+                            <button class="btn-red" type="button">Search</button>         
+                             </div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <td style="width: 10%;">Order ID</td>
+                                    <td style="width: 25%;">Date</td>
+                                    <td style="width: 20%;">Customer</td>
+                                    <td style="width: 10%;">Payment Status</td>
+                                    <td style="width: 15%;">Transaction method</td>
+                                    <td style="width: 10%;">Payment methods</td>
+                                    <td style="width: 10%;">Action</td>
+                                </tr>
+                            </thead>
+      
+                            <tbody class="table-striped">
+                                <tr>
+                                    <td>#68681</td>
+                                    <td>Aug 16, 2020, 1:55 (ET)</td>
+                                    <td>Williams Tonston</td>
+                                    <td><span class="badge text-bg-success">Paid</span></td>
+                                    <td><span class="badge text-bg-success">Delivery</span></td>
+                                    <td>E-pay</td>
+                                    <td><button class="btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModalCustomerorder">View</button></td>
+                                </tr>
+      
+                                <tr>
+                                    <td>#68681</td>
+                                    <td>Aug 16, 2020, 1:55 (ET)</td>
+                                    <td>Williams Tonston</td>
+                                    <td><span class="badge text-bg-warning">Pending</span></td>
+                                    <td><span class="badge text-bg-success">Delivery</span></td>
+                                    <td>COD</td>
+                                    <td><button class="btn-yellow">View</button></td>
+                                </tr>
+      
+                                <tr>
+                                    <td>#68681</td>
+                                    <td>Aug 16, 2020, 1:55 (ET)</td>
+                                    <td>Williams Tonston</td>
+                                    <td><span class="badge text-bg-warning">Pending</span></td>
+                                    <td><span class="badge text-bg-danger">Pickup</span></td>
+                                    <td>COD</td>
+                                    <td><button class="btn-yellow">View</button></td>
+                                </tr>
+      
+                                <tr>
+                                    <td>#68681</td>
+                                    <td>Aug 16, 2020, 1:55 (ET)</td>
+                                    <td>Williams Tonston</td>
+                                    <td><span class="badge text-bg-success">Paid</span></td>
+                                    <td><span class="badge text-bg-danger">Pickup</span></td>
+                                    <td>E-pay</td>
+                                    <td><button class="btn-yellow">View</button>                                    
+                                    </td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                      </div>
+
+                                    </div>
+
+
+                                    </div> 
+                                </div>
+                    
+                            </div>
+                            <div id="openOrders" class="tab-pane fade">
+                              
+                            </div>
+                    </div>
+                        
+
+
+                    </div>
+                </div>
+                
+                <!-- ======================= Sales Dashboard ================== -->
+                <div class="card">
+                    <div>
+                        <div class="numbers"></div>
+                        <div class="cardName">History</div>
+                    </div>
+
+                  <!--   <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div> -->
+                </div>
+
+                <!-- ======================= Setting  ================== -->
+                <div class="card">
+                    <div>
+                        <div class="numbers"></div>
+                        <div class="cardName">Setting</div>
+                    </div>
+
+                    <!-- <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- modal view customer order -->
+<div class="modal fade" id="exampleModalCustomerorder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-yellow ">
+        <div class="modal-header">
+            <ion-icon name="chevron-back-outline" class="px-3 cursorpointer"  data-bs-dismiss="modal" aria-label="Close" ></ion-icon>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Customer ID: #68681</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+                <div class="addNote bg-yellow-container mt-2">
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="sidebar_product">Product</div>
+                    <div class="sidebar_product">Quantity</div>
+                    <div class="sidebar_product">Price</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="delete d-flex">
+                      <div class="sidebar_detail" style="margin-left: 5px;">Standard Shipping</div>
+                    </div>
+                    <div class="sidebar_detail"></div>
+                    <div class="sidebar_product">₱20.00</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="delete d-flex">
+                      <div class="sidebar_detail" style="margin-left: 5px;">Chicken</div>
+                    </div>
+                    <div class="sidebar_detail">1</div>
+                    <div class="sidebar_product">₱40.00</div>
+                  </div>
+                </div>
+                <div class="checkoutBox bg-red-container px-3 mt-2">
+                    <div class="checkout_price">Total </div>
+                    <div class="checkout_price ">Paid</div>
+                  </div>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-red" data-bs-toggle="modal" data-bs-target="#exampleModalRider">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+   <!-- Modal Inventory Update Product -->
+   <div class="modal fade" id="updateproduct" tabindex="-1" aria-labelledby="exampleModalAddProduct" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content bg-yellow">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalAddProduct">Update product</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+            <div class="form-floating mt-4">
+                <input type="text" class="form-control" id="floatingName" placeholder="Chicken">
+                <label for="floatingName" class="px-4">Chicken</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-floating mt-2">
+                <input type="text" class="form-control" id="floatingPart" placeholder="Food">
+                <label for="floatingPart" class="px-4">Food</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control" id="floatingAvail" placeholder="1">
+                    <label for="floatingAvail">1</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control" id="floatingPrice" placeholder="P40.00">
+                    <label for="floatingPrice">P40.00</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="form-floating mt-2">
+                <input type="text" class="form-control" id="floatingAvail" placeholder="4">
+                <label for="floatingAvail" class="px-4">4</label>
+            </div> 
+        </div>
+        <div class="row mt-2">
+            <label class="form-label">Description (Optional)</label>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus magni harum facilis architecto." id="floatingTextarea"></textarea>
+                <label for="floatingTextarea" class="px-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus magni harum facilis architecto.</label>
+              </div> 
+        </div>
+        <div class="row">
+            <label class="form-label mt-2">Media</label>
+            <div class="mb-3">
+                <input class="form-control" type="file">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label for="">Add another option</label>
+        </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-yellow" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-red" data-bs-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Modal Inventory Add Product -->
+  <div class="modal fade" id="addProduct" tabindex="-1" aria-labelledby="exampleModalAddProduct" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content bg-yellow">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalAddProduct">Add product</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <div class="row">
+            <div class="form-floating mt-4">
+                <input type="text" class="form-control" id="floatingName" placeholder="Product">
+                <label for="floatingName" class="px-4">Product</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-floating mt-2">
+                <input type="text" class="form-control" id="floatingPart" placeholder="Type">
+                <label for="floatingPart" class="px-4">Type</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control" id="floatingAvail" placeholder="Stock">
+                    <label for="floatingAvail">Stock</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control" id="floatingPrice" placeholder="Price">
+                    <label for="floatingPrice">Price</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="form-floating mt-2">
+                <input type="text" class="form-control" id="floatingAvail" placeholder="Variant">
+                <label for="floatingAvail" class="px-4">Variant</label>
+            </div> 
+        </div>
+        <div class="row mt-2">
+            <label class="form-label">Description (Optional)</label>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Description.." id="floatingTextarea"></textarea>
+                <label for="floatingTextarea" class="px-4">Description</label>
+              </div> 
+        </div>
+        <div class="row">
+            <label class="form-label mt-2">Media</label>
+            <div class="mb-3">
+                <input class="form-control" type="file">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label for="">Add another option</label>
+        </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-yellow" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-red" data-bs-dismiss="modal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Add Customer -->
+                                  
+  <div class="modal fade" id="addCustomer" tabindex="-1" aria-labelledby="exampleModalAddCustomer" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-yellow">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalAddCustomer">Add customer</h1>
+          <div class="row">
+            <div class="col">
+                <div></div>
+                <div></div>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="" class="form-label">Account Information</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-4">
+                                    <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                                    <label for="floatingName">Name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating mt-4">
+                                    <input type="text" class="form-control" id="floatingLast" placeholder="Last">
+                                    <label for="floatingLast">Last</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-2">
+                                    <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
+                                    <label for="floatingEmail">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating mt-2">
+                                <input type="text" class="form-control" id="floatingPhone" placeholder="Phone">
+                                <label for="floatingPhone" class="px-4">Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Shipping Address</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-4">
+                                    <input type="text" class="form-control" id="floatingLocation" placeholder="Location">
+                                    <label for="floatingLocation">Location</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-2">
+                                    <input type="text" class="form-control" id="floatingCode" placeholder="Zip Cod">
+                                    <label for="floatingCode">Zip Code</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-2">
+                                    <input type="text" class="form-control" id="floatingAddress1" placeholder="Address Line 1">
+                                    <label for="floatingAddress1">Address Line 1</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating mt-2">
+                                    <input type="text" class="form-control" id="floatingAddress2" placeholder="Address Line 2">
+                                    <label for="floatingAddress2">Address Line 2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Shipping Address</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-4">
+                                    <input type="text" class="form-control" id="floatingUser" placeholder="Username">
+                                    <label for="floatingUser">Username</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control" id="floatingPass1" placeholder="Password">
+                                    <label for="floatingPass1">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control" id="floatingPass" placeholder="Confirm Password">
+                                    <label for="floatingPass">Confirm Password</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-yellow" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-red" data-bs-dismiss="modal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Modal delete Order -->
+<div class="modal fade" id="exampleModaldelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-yellow">
+        <div class="modal-body">
+        <div class="d-flex align-items-center flex-column">
+        
+        <div>
+          <ion-icon name="close-circle-outline" class="check-red"></ion-icon>
+        </div>
+          <h1 class="modal-title fs-5">Delete product</h1>
+          <div class="sidebar_detail">are you sure you want to delete this product?</div>
+          <div class="d-flex mt-2">
+                    <button type="button" class="btn-yellow mx-2" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn-red mx-2" data-bs-dismiss="modal">Delete</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Modal Success Order -->
+<div class="modal fade" id="exampleModalinsufficient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-yellow">
+        <div class="modal-body">
+        <div class="d-flex align-items-center flex-column">
+        
+        <div>
+          <ion-icon name="close-circle-outline" class="check-red"></ion-icon>
+        </div>
+          <h1 class="modal-title fs-5">Insufficient stock of Chicken!</h1>
+          <div class="sidebar_detail">make sure to have sufficient stock</div>
+          <button type="button" class="btn-red" data-bs-dismiss="modal" data-bs-target="#updateproduct" data-bs-toggle="modal">Ok</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Modal Success Order -->
+<div class="modal fade" id="exampleModalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-yellow">
+        <div class="modal-body">
+        <div class="d-flex align-items-center flex-column">
+        
+        <div>
+          <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+        </div>
+          <h1 class="modal-title fs-5">Done!</h1>
+          <div class="sidebar_detail">Transaction is completed</div>
+          <button type="button" class="btn-red" data-bs-dismiss="modal" >Ok</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Modal Customer list-->
+<div class="modal fade" id="exampleModalcustomerlist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content bg-yellow">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <nav class="nav"><!--nav start-->
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#billingAdd">Billing Address</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#changePass">Change password</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#notif">Notification</a></li>
+                </nav><!--nav end-->
+                <div class="tab-content m-3"><!--tab content start-->
+                    <div id="profile" class="tab-pane active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="bg-yellow-container position-relative" style="min-height:150px; ">
+                                <div class="profile position-absolute">
+                                    <img src="" alt="">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-3">
+                                <div class="row"><div><label for="" class="form-label mt-2">Full name</label></div></div>
+                                <div class="row"><div><label for="" class="form-label mt-3">Email</label></div></div>
+                                <div class="row"><div><label for="" class="form-label mt-3">Phone (Optional)</label></div></div>
+                                <div class="row"><div><label for="" class="form-label mt-3">City</label></div></div>
+                                <div class="row"><div><label for="" class="form-label mt-3">Location</label></div></div>
+                                </div>
+                                
+                                <div class="col-9">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                        <span class="input-group-btn"></span>
+                                        <input type="text" class="form-control" placeholder="Last name">         
+                                    </div>
+                                    <input type="email" class="form-control mt-2" placeholder="email@gmail.com">  
+                                    <input type="text" class="form-control mt-2" placeholder="Phone number">  
+                                    <input type="text" class="form-control mt-2" placeholder="Sorsogon">  
+                                    <div class="input-group mt-2">
+                                        <input type="text" class="form-control" placeholder="Address 1">
+                                        <span class="input-group-btn"></span>
+                                        <input type="text" class="form-control" placeholder="Address 2">         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="billingAdd" class="tab-pane fade">
+                        <div class="row mt-4">
+                            <div class="col-3">
+                            <div class="row"><div><label for="" class="form-label mt-2">Location</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Location</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Addres line 1</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Address line 2</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Zip code</label></div></div>
+                            </div>
+                            
+                            <div class="col-9">
+                                <input type="text" class="form-control mt-2" placeholder="Location">
+                                <input type="text" class="form-control mt-2" placeholder="Location">  
+                                <input type="text" class="form-control mt-2" placeholder="Phone number">  
+                                <input type="text" class="form-control mt-2" placeholder="Sorsogon">  
+                                <div class="input-group mt-2">
+                                    <input type="text" class="form-control" placeholder="Address 1">
+                                    <span class="input-group-btn"></span>
+                                    <input type="text" class="form-control" placeholder="Address 2">         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="changePass" class="tab-pane fade">
+                        <div class="row mt-4">
+                            <div class="col-3">
+                            <div class="row"><div><label for="" class="form-label mt-2">Password</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">New Password</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Email</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">New email</label></div></div>
+                            </div>
+                            
+                            <div class="col-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Password">
+                                    <span class="input-group-btn"></span>
+                                    <input type="text" class="form-control" placeholder="New Password">         
+                                </div>
+                                <input type="email" class="form-control mt-2" placeholder="email@gmail.com">  
+                                <input type="email" class="form-control mt-2" placeholder="email@gmail.com"> 
+                                <input type="email" class="form-control mt-2" placeholder="email@gmail.com">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="notif" class="tab-pane fade">
+                        <div class="row mt-4">
+                            <div class="col-3">
+                            <div class="row"><div><label for="" class="form-label mt-2">Full name</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Email</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Phone (Optional)</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">City</label></div></div>
+                            <div class="row"><div><label for="" class="form-label mt-3">Location</label></div></div>
+                            </div>
+                            
+                            <div class="col-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                    <span class="input-group-btn"></span>
+                                    <input type="text" class="form-control" placeholder="Last name">         
+                                </div>
+                                <input type="email" class="form-control mt-2" placeholder="email@gmail.com">  
+                                <input type="text" class="form-control mt-2" placeholder="Phone number">  
+                                <input type="text" class="form-control mt-2" placeholder="Sorsogon">  
+                                <div class="input-group mt-2">
+                                    <input type="text" class="form-control" placeholder="Address 1">
+                                    <span class="input-group-btn"></span>
+                                    <input type="text" class="form-control" placeholder="Address 2">         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-yellow" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn-red" data-bs-dismiss="modal">Update</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  
+  <!-- Rider Search -->
+  <div class="modal fade" id="exampleModalRider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-yellow ">
+        <div class="modal-header">
+            <ion-icon name="chevron-back-outline" class="px-3 cursorpointer"  data-bs-target="#exampleModalCustomerorder" data-bs-toggle="modal"></ion-icon>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Search for rider</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="addNote bg-yellow-container mt-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search available riders">
+                            <span class="input-group-btn"></span>
+                            <button class="btn-red" type="button">Search</button>         
+                             </div>
+                        <div class="d-flex justify-content-between mb-2 mt-3">
+                          <div class="sidebar_product">Name</div>
+                          <div class="sidebar_product">Status</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="delete d-flex">
+                            <div class="sidebar_detail" style="margin-left: 5px;">Ronnie Estillero</div>
+                          </div>
+                          <div class="sidebar_detail"></div>
+                          <div class="sidebar_product badge bg-success">Available</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                          <div class="delete d-flex">
+                            <div class="sidebar_detail" style="margin-left: 5px;">Zoren Madridano</div>
+                          </div>
+                          <div class="sidebar_product badge bg-danger">Not available</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-red" data-bs-target="#exampleModalSuccess" data-bs-toggle="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
